@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="20" alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="perez.cordero.projecte_ra5_ra7.controllers.MenuController"
+      stylesheets="@../css/style.css">
+
+    <Label text="MENÚ PRINCIPAL" />
+
+    <Button text="Crear Animal" onAction="#crearAnimal"/>
+    <Button text="Mostrar Animals" onAction="#mostrarAnimals"/>
+    <Button text="Eliminar Animal" onAction="#eliminarAnimal"/>
+
+</VBox>

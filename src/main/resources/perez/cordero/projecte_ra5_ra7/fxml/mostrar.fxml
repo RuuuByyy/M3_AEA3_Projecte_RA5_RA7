@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="perez.cordero.projecte_ra5_ra7.controllers.MostrarController">
+
+    <Label text="Animals"/>
+    <ListView fx:id="listView" prefWidth="300"/>
+
+</VBox>

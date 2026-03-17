@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+
+<?import javafx.scene.control.TextField?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.collections.FXCollections?>
+<?import com.sun.org.apache.xpath.internal.operations.String?>
+<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="perez.cordero.projecte_ra5_ra7.controllers.CrearController">
+
+    <TextField fx:id="txtNom" promptText="Nom"/>
+    <TextField fx:id="txtEdat" promptText="Edat"/>
+
+    <ComboBox fx:id="combo">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="VACA"/>
+                <String fx:value="GALLINA"/>
+                <String fx:value="POLP"/>
+                <String fx:value="PEIX"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <Button text="Crear" onAction="#crear"/>
+
+</VBox>

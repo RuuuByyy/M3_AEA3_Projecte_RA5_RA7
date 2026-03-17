@@ -1,8 +1,14 @@
-module perez.cordero.projecte_ra5_ra7 {
+module app {
     requires javafx.controls;
     requires javafx.fxml;
 
+    requires fitxers;
+    requires missatges;
+    requires com.google.zxing;
+    requires com.google.zxing.javase;
 
-    opens perez.cordero.projecte_ra5_ra7 to javafx.fxml;
-    exports perez.cordero.projecte_ra5_ra7;
+    opens controllers to javafx.fxml;
+    opens classes;
+
+    exports app;
 }

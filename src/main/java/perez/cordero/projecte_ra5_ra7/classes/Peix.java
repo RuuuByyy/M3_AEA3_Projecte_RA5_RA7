@@ -1,22 +1,17 @@
 package perez.cordero.projecte_ra5_ra7.classes;
 
-public class Peix extends Animal {
+
+import perez.cordero.projecte_ra5_ra7.interfaces.AccionsAnimals;
+
+public class Peix extends Animal implements AccionsAnimals {
 
     public Peix(String nom, int edat) {
-        super(nom, edat, 50, Habitat.AIGUA, TipusAnimal.PEIX);
+        super(nom, edat, TipusAnimal.PEIX, Habitat.AIGUA);
     }
 
-    // El pez no tiene el método munyir(), así solucionamos el bug de MinecraftDam1.
-    // Solo tiene métodos propios de nadar.
+    public String ferSo() { return "Blub"; }
 
-    @Override
-    public void moure() {
-        System.out.println(nom + " està nadant ràpidament.");
-        reduirVitalitat(2); // Nadar gasta menos energía que caminar [cite: 23]
-    }
-
-    @Override
-    public void ferSo() {
-        System.out.println("Glu glu glu...");
-    }
+    public void caminar() {}
+    public void nadar() {}
+    public void volar() {}
 }
