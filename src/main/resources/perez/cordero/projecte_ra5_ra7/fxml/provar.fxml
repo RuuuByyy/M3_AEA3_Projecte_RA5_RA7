@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="perez.cordero.projecte_ra5_ra7.controllers.ProvarController"
+      stylesheets="@../css/style.css"
+      prefWidth="500" prefHeight="400">
+
+    <Label text="Provar Mètodes" styleClass="label-title"/>
+
+    <ComboBox fx:id="comboAnimals" promptText="Selecciona un animal" />
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Caminar" onAction="#caminar"/>
+        <Button text="Nadar" onAction="#nadar"/>
+        <Button text="Volar" onAction="#volar"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Fer So" onAction="#ferSo"/>
+        <Button text="Descansar" onAction="#descansar"/>
+        <Button fx:id="btnMunyir" text="Munyir" onAction="#munyir" visible="false"/>
+    </HBox>
+
+    <Label fx:id="lblVitalitat" text="Vitalitat: -"/>
+    <Label fx:id="lblResultat" text=""/>
+
+</VBox>

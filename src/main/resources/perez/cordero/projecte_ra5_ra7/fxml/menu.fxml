@@ -9,12 +9,14 @@
 <VBox spacing="20" alignment="CENTER"
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="perez.cordero.projecte_ra5_ra7.controllers.MenuController"
-      stylesheets="@../css/style.css">
+      stylesheets="@../css/style.css"
+      prefWidth="500" prefHeight="400">
 
-    <Label text="MENÚ PRINCIPAL" />
+    <Label text="MENÚ PRINCIPAL" styleClass="label-title"/>
 
     <Button text="Crear Animal" onAction="#crearAnimal"/>
     <Button text="Mostrar Animals" onAction="#mostrarAnimals"/>
     <Button text="Eliminar Animal" onAction="#eliminarAnimal"/>
+    <Button text="Provar Mètodes" onAction="#provarMetodes"/>
 
 </VBox>

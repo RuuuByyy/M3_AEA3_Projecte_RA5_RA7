@@ -1,19 +1,156 @@
+/* ===== FONS GENERAL ===== */
 .root {
-    -fx-background-color: #202020;
+    -fx-background-color: #48462f;
+    -fx-font-family: "Monospace";
+    -fx-background-image: url("../images/minecraft_bg.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+/* ===== TITOLS ===== */
+.label-title {
+    -fx-text-fill: #FFFF55;
+    -fx-font-size: 20px;
+    -fx-effect: dropshadow(gaussian, #3F3F00, 2, 0, 2, 2);
 }
 
 .label {
-    -fx-text-fill: white;
-    -fx-font-size: 16px;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 13px;
+    -fx-effect: dropshadow(gaussian, #3F3F3F, 1, 0, 1, 1);
 }
 
+/* ===== BOTONS ESTIL MINECRAFT ===== */
 .button {
-    -fx-background-color: #4CAF50;
-    -fx-text-fill: white;
-    -fx-font-size: 14px;
+    -fx-background-color:
+        linear-gradient(to bottom, #6e6e6e 0%, #5a5a5a 45%, #484848 55%, #3a3a3a 100%);
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 13px;
+    -fx-border-color: #1e1e1e;
+    -fx-border-width: 2px;
+    -fx-border-insets: -1;
+    -fx-padding: 6 20 6 20;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, #1a1a1a, 2, 0, 1, 1);
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
 }
 
+.button:hover {
+    -fx-background-color:
+        linear-gradient(to bottom, #8a8aff 0%, #7070dd 45%, #5858bb 55%, #4646a0 100%);
+    -fx-border-color: #2a2a80;
+}
+
+.button:pressed {
+    -fx-background-color:
+        linear-gradient(to bottom, #3a3a80 0%, #4646a0 45%, #5858bb 55%, #6a6add 100%);
+    -fx-border-color: #2a2a80;
+    -fx-translate-y: 1;
+}
+
+/* ===== CAMPS DE TEXT ===== */
 .text-field {
-    -fx-background-color: #333;
+    -fx-background-color: #000000;
+    -fx-text-fill: #e0e0e0;
+    -fx-prompt-text-fill: #707070;
+    -fx-border-color: #a0a0a0 #555555 #555555 #a0a0a0;
+    -fx-border-width: 2px;
+    -fx-font-size: 13px;
+    -fx-padding: 4 8 4 8;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+.text-field:focused {
+    -fx-border-color: #FFFFFF #888888 #888888 #FFFFFF;
+}
+
+/* ===== COMBOBOX ===== */
+.combo-box {
+    -fx-background-color:
+        linear-gradient(to bottom, #6e6e6e 0%, #5a5a5a 45%, #484848 55%, #3a3a3a 100%);
+    -fx-border-color: #1e1e1e;
+    -fx-border-width: 2px;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+.combo-box .list-cell {
     -fx-text-fill: white;
+    -fx-background-color: transparent;
+    -fx-font-size: 12px;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.combo-box .arrow {
+    -fx-background-color: white;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #2a2a2a;
+    -fx-border-color: #555555;
+    -fx-border-width: 2px;
+}
+
+.combo-box-popup .list-view .list-cell {
+    -fx-background-color: #2a2a2a;
+    -fx-text-fill: #e0e0e0;
+    -fx-padding: 4 8 4 8;
+}
+
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: #4646a0;
+    -fx-text-fill: white;
+}
+
+/* ===== LLISTA ===== */
+.list-view {
+    -fx-background-color: #000000;
+    -fx-border-color: #a0a0a0 #555555 #555555 #a0a0a0;
+    -fx-border-width: 2px;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+.list-view .list-cell {
+    -fx-background-color: #000000;
+    -fx-text-fill: #aaaaaa;
+    -fx-font-size: 12px;
+    -fx-padding: 3 6 3 6;
+}
+
+.list-view .list-cell:selected {
+    -fx-background-color: #4646a0;
+    -fx-text-fill: #FFFFFF;
+}
+
+.list-view .list-cell:empty {
+    -fx-background-color: #000000;
+}
+
+/* ===== SCROLLBAR ===== */
+.scroll-bar {
+    -fx-background-color: #2a2a2a;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #6e6e6e;
+    -fx-background-radius: 0;
+}
+
+.scroll-bar .increment-button, .scroll-bar .decrement-button {
+    -fx-background-color: #4a4a4a;
+}
+
+.scroll-bar .increment-arrow, .scroll-bar .decrement-arrow {
+    -fx-background-color: #aaaaaa;
+}
+
+/* ===== VBOX PADDING ===== */
+.vbox {
+    -fx-padding: 20;
 }
