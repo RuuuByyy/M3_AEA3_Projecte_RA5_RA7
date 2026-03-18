@@ -11,15 +11,16 @@ version '1.0-SNAPSHOT'
 
 repositories {
   mavenCentral()
-  maven { url 'https://jitpack.io' } // JitPack para Llibreria_Fitxers
+  maven { url 'https://jitpack.io' } //
+  maven { url 'https://gitlab.com/api/v4/projects/56672451/packages/maven' }
 }
 
 ext {
   junitVersion = '5.9.2'
 }
 
-sourceCompatibility = '11'
-targetCompatibility = '11'
+sourceCompatibility = '17'
+targetCompatibility = '17'
 
 tasks.withType(JavaCompile) {
   options.encoding = 'UTF-8'
@@ -27,19 +28,17 @@ tasks.withType(JavaCompile) {
 
 application {
   mainModule = 'perez.cordero.projecte_ra5_ra7'
-  mainClass = 'perez.cordero.projecte_ra5_ra7.HelloApplication'
+  mainClass = 'perez.cordero.projecte_ra5_ra7.app.MainApp'
 }
 
 javafx {
-  version = '17.0.6'
+  version = '21.0.2'
   modules = ['javafx.controls', 'javafx.fxml']
 }
 
 dependencies {
-  // Libreria Fitxers desde GitHub (pública) usando JitPack
   implementation 'com.github.aazbi:Llibreria_Fitxers:master-SNAPSHOT'
 
-  // Libreria mensajes
   implementation 'vicent.Bellver:missatges_i_alertes:4.0'
 
   // ZXing QR

@@ -10,9 +10,11 @@
 
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.collections.FXCollections?>
-<?import com.sun.org.apache.xpath.internal.operations.String?>
+<?import java.lang.String?>
 <VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="perez.cordero.projecte_ra5_ra7.controllers.CrearController">
+      fx:controller="perez.cordero.projecte_ra5_ra7.controllers.CrearController"
+      stylesheets="@../css/style.css"
+      prefWidth="500" prefHeight="400">
 
     <TextField fx:id="txtNom" promptText="Nom"/>
     <TextField fx:id="txtEdat" promptText="Edat"/>

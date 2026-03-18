@@ -8,7 +8,9 @@
 
 <VBox spacing="10" alignment="CENTER"
       xmlns:fx="http://javafx.com/fxml"
-      fx:controller="perez.cordero.projecte_ra5_ra7.controllers.EliminarController">
+      fx:controller="perez.cordero.projecte_ra5_ra7.controllers.EliminarController"
+      stylesheets="@../css/style.css"
+      prefWidth="500" prefHeight="350">
 
     <TextField fx:id="txtNom" promptText="Nom animal"/>
     <Button text="Eliminar" onAction="#eliminar"/>

@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="487b56ea-03a0-4336-8db1-764da41a3898" name="Changes" comment=" commit build.gradle" />
+    <list default="true" id="487b56ea-03a0-4336-8db1-764da41a3898" name="Changes" comment=" commit build.gradle">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/classes/Gallina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/classes/Gallina.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/classes/Peix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/classes/Peix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/classes/Polp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/classes/Polp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/classes/Vaca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/classes/Vaca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/controllers/CrearController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/controllers/CrearController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/controllers/EliminarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/controllers/EliminarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/utils/GestioFitxers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/utils/GestioFitxers.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +37,23 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Projecte_Ra5_Ra7" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Projecte_Ra5_Ra7" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Projecte_Ra5_Ra7" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -52,13 +82,45 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.M3_AEA3_Projecte_RA5_RA7 [buildDependents].executor": "Run",
+    "Gradle.Projecte_Ra5_Ra7 [build].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Ruben/Desktop/DAM-GS3/M3/AEA3/Projecte_Ra5_Ra7"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/david/Documents/GitHub/M3_AEA3_Projecte_RA5_RA7",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.Projecte_Ra5_Ra7 [build]">
+    <configuration name="M3_AEA3_Projecte_RA5_RA7 [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildDependents" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="Projecte_Ra5_Ra7 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -84,8 +146,17 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Projecte_Ra5_Ra7 [build]" />
+        <item itemvalue="Gradle.M3_AEA3_Projecte_RA5_RA7 [buildDependents]" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -95,6 +166,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1773246985633</updated>
+      <workItem from="1773788278656" duration="115000" />
+      <workItem from="1773788399327" duration="52000" />
+      <workItem from="1773788456684" duration="608000" />
+      <workItem from="1773789583749" duration="1195000" />
     </task>
     <task id="LOCAL-00001" summary="primer commit">
       <option name="closed" value="true" />
@@ -122,6 +197,9 @@
     </task>
     <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

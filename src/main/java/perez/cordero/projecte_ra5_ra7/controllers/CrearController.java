@@ -5,7 +5,7 @@ import perez.cordero.projecte_ra5_ra7.classes.*;
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
-import vicent.Bellver.MissatgesIAlertes,*;
+import vicent.Bellver.MissatgesIAlertes.Alerta;
 import perez.cordero.projecte_ra5_ra7.utils.GestioFitxers;
 import perez.cordero.projecte_ra5_ra7.utils.QRUtils;
 
@@ -31,8 +31,8 @@ public class CrearController {
         }
 
         GestioFitxers.guardarAnimal(a);
-        QRUtils.generarQR(a);
+        QRUtils.generaCodiQR(a);
 
-        MissatgesIAlertes.mostrarInfo("Creat correctament");
+        new Alerta().alertaInformacio("Info", null, "Creat correctament");
     }
 }

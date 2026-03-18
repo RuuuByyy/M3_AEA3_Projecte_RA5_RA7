@@ -2,7 +2,7 @@ package perez.cordero.projecte_ra5_ra7.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
-import missatges.MissatgesIAlertes;
+import vicent.Bellver.MissatgesIAlertes.Alerta;
 import perez.cordero.projecte_ra5_ra7.utils.GestioFitxers;
 
 public class EliminarController {
@@ -19,6 +19,6 @@ public class EliminarController {
         GestioFitxers.eliminarAnimal(nom, "fitxers/polps.dat");
         GestioFitxers.eliminarAnimal(nom, "fitxers/peixos.dat");
 
-        MissatgesIAlertes.mostrarInfo("Animal eliminat");
+        new Alerta().alertaInformacio("Info", null, "Animal eliminat");
     }
 }

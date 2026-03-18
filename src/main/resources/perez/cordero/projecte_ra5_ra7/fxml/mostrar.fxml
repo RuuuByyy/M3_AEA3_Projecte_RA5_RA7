@@ -5,12 +5,18 @@
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
 
 <VBox spacing="10" alignment="CENTER"
       xmlns:fx="http://javafx.com/fxml"
-      fx:controller="perez.cordero.projecte_ra5_ra7.controllers.MostrarController">
+      fx:controller="perez.cordero.projecte_ra5_ra7.controllers.MostrarController"
+      stylesheets="@../css/style.css"
+      prefWidth="550" prefHeight="550">
 
-    <Label text="Animals"/>
-    <ListView fx:id="listView" prefWidth="300"/>
+    <Label text="Animals" styleClass="label-title"/>
+    <ComboBox fx:id="comboFiltre" promptText="Tots els animals"/>
+    <ListView fx:id="listView" prefWidth="400" prefHeight="200"/>
+    <Label text="Codi QR:"/>
+    <ImageView fx:id="imgQR" fitWidth="200" fitHeight="200" preserveRatio="true"/>
 
 </VBox>

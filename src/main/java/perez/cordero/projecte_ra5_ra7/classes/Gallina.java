@@ -1,6 +1,6 @@
 package perez.cordero.projecte_ra5_ra7.classes;
 
-import perez.cordero.projecte_ra5_ra7.interfaces.AccionsAnimals;
+import perez.cordero.projecte_ra5_ra7.classes.AccionsAnimals;
 
 public class Gallina extends Animal implements AccionsAnimals {
 
@@ -10,7 +10,7 @@ public class Gallina extends Animal implements AccionsAnimals {
 
     public String ferSo() { return "Coco"; }
 
-    public void caminar() {}
-    public void nadar() {}
-    public void volar() {}
+    public int caminar() { int p = 5; setVitalitat(vitalitat - p); return -p; }
+    public int nadar() { int p = 20; setVitalitat(vitalitat - p); return -p; }
+    public int volar() { int p = 10; setVitalitat(vitalitat - p); return -p; }
 }

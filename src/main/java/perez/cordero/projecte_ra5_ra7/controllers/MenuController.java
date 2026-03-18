@@ -25,14 +25,18 @@ public class MenuController {
     }
 
     public void crearAnimal() {
-        Fgeneric("/fxml/crear.fxml", "Crear Animal");
+        Fgeneric("/perez/cordero/projecte_ra5_ra7/fxml/crear.fxml", "Crear Animal");
     }
 
     public void mostrarAnimals() {
-        Fgeneric("/fxml/mostrar.fxml", "Mostrar Animals");
+        Fgeneric("/perez/cordero/projecte_ra5_ra7/fxml/mostrar.fxml", "Mostrar Animals");
     }
 
     public void eliminarAnimal() {
-        Fgeneric("/fxml/eliminar.fxml", "Eliminar Animal");
+        Fgeneric("/perez/cordero/projecte_ra5_ra7/fxml/eliminar.fxml", "Eliminar Animal");
+    }
+
+    public void provarMetodes() {
+        Fgeneric("/perez/cordero/projecte_ra5_ra7/fxml/provar.fxml", "Provar Mètodes");
     }
 }
