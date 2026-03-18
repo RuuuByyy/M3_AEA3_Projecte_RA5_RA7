@@ -4,20 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="487b56ea-03a0-4336-8db1-764da41a3898" name="Changes" comment=" commit build.gradle">
+    <list default="true" id="487b56ea-03a0-4336-8db1-764da41a3898" name="Changes" comment="commit ruben">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/app/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/app/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/classes/AccionsAnimals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/classes/AccionsAnimals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/classes/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/classes/Animal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/classes/Gallina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/classes/Gallina.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/classes/Peix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/classes/Peix.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/classes/Polp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/classes/Polp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/classes/TipusAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/classes/TipusAnimal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/classes/Vaca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/classes/Vaca.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/controllers/CrearController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/controllers/CrearController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/controllers/EliminarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/controllers/EliminarController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/utils/GestioFitxers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/utils/GestioFitxers.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,23 +38,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Projecte_Ra5_Ra7" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Projecte_Ra5_Ra7" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Projecte_Ra5_Ra7" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -95,10 +80,27 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager" selected="Gradle.Projecte_Ra5_Ra7 [build]">
+    <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="perez.cordero.projecte_ra5_ra7.app.MainApp" />
+      <module name="Projecte_Ra5_Ra7.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="perez.cordero.projecte_ra5_ra7.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="M3_AEA3_Projecte_RA5_RA7 [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -143,9 +145,56 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="Projecte_Ra5_Ra7 [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Projecte_Ra5_Ra7 [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Projecte_Ra5_Ra7 [build]" />
+        <item itemvalue="Gradle.Projecte_Ra5_Ra7 [clean]" />
+        <item itemvalue="Gradle.Projecte_Ra5_Ra7 [run]" />
+        <item itemvalue="Application.MainApp" />
         <item itemvalue="Gradle.M3_AEA3_Projecte_RA5_RA7 [buildDependents]" />
       </list>
     </recent_temporary>

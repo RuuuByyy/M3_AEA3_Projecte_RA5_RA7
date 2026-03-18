@@ -19,11 +19,23 @@ ext {
   junitVersion = '5.9.2'
 }
 
-sourceCompatibility = '17'
-targetCompatibility = '17'
+sourceCompatibility = '11'
+targetCompatibility = '11'
+
+java {
+  toolchain {
+    languageVersion = JavaLanguageVersion.of(11)
+  }
+}
 
 tasks.withType(JavaCompile) {
   options.encoding = 'UTF-8'
+  options.release = 11
+}
+
+javafx {
+  version = '17.0.2'
+  modules = ['javafx.controls', 'javafx.fxml']
 }
 
 application {
@@ -31,10 +43,6 @@ application {
   mainClass = 'perez.cordero.projecte_ra5_ra7.app.MainApp'
 }
 
-javafx {
-  version = '21.0.2'
-  modules = ['javafx.controls', 'javafx.fxml']
-}
 
 dependencies {
   implementation 'com.github.aazbi:Llibreria_Fitxers:master-SNAPSHOT'
