@@ -4,13 +4,14 @@ package perez.cordero.projecte_ra5_ra7.controllers;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 // Importación de alertas personalizadas y gestión de ficheros externa
 import vicent.Bellver.MissatgesIAlertes.Alerta;
 import Perez.Cordero.Fitxers;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * Controlador de la pantalla de Login.
@@ -22,20 +23,27 @@ public class LoginController {
     @FXML
     private TextField txtUser;
 
+    // Campo de contraseña vinculado al FXML
+    @FXML
+    private PasswordField txtPassword;
+
     /**
-     * Método principal de validación de usuario.
+     * Método principal de validación de usuario y contraseña.
      */
     public void login() {
 
         // Instanciamos el manejador de ficheros apuntando al archivo de usuarios
         Fitxers f = new Fitxers("fitxers/usuaris.dat");
 
-        // Leemos el objeto del archivo y hacemos un casting a ArrayList de Strings
-        ArrayList<String> usuaris = (ArrayList<String>) f.llegirObjecte();
+        // Leemos el objeto del archivo y hacemos un casting a HashMap de usuario-contraseña
+        HashMap<String, String> usuaris = (HashMap<String, String>) f.llegirObjecte();
 
-        // Verificamos si la lista está vacía o si el nombre escrito NO está en la lista
-        if (usuaris == null || !usuaris.contains(txtUser.getText())) {
-            new Alerta().alertaError("Error", null, "Usuari incorrecte");
+        String user = txtUser.getText();
+        String pass = txtPassword.getText();
+
+        // Verificamos si el mapa está vacío, el usuario no existe, o la contraseña no coincide
+        if (usuaris == null || !usuaris.containsKey(user) || !usuaris.get(user).equals(pass)) {
+            new Alerta().alertaError("Error", null, "Usuari o contrasenya incorrecte");
             return; // Cortamos la ejecución si los datos son erróneos
         }
 
