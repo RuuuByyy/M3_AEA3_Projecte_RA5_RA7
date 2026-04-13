@@ -1,77 +1,69 @@
 package perez.cordero.projecte_ra5_ra7.utils;
 
-// Importaciones de la librería externa para manejo de ficheros y las clases del proyecto
 import Perez.Cordero.Fitxers;
 import perez.cordero.projecte_ra5_ra7.classes.Animal;
 import perez.cordero.projecte_ra5_ra7.classes.TipusAnimal;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
-/**
- * Clase de utilidad para centralizar la gestión de archivos binarios (.dat).
- * Todos los métodos son 'static' para poder usarlos sin instanciar la clase.
- */
+// Classe d'utilitat per gestionar els fitxers binaris (.dat)
+// Tots els metodes son static per poder-los cridar sense instanciar la classe
 public class GestioFitxers {
 
-    /**
-     * Método auxiliar que devuelve la ruta del archivo según el tipo de animal.
-     * Ayuda a organizar los datos en archivos separados por especie.
-     */
+    // Ruta del fitxer d'usuaris
+    private static final String RUTA_USUARIS = "fitxers/usuaris.dat";
+
+    // Retorna la ruta del fitxer segons el tipus d'animal
     public static String rutaFitxer(TipusAnimal tipus) {
         switch (tipus) {
-            case VACA: return "fitxers/vaques.dat";
+            case VACA:    return "fitxers/vaques.dat";
             case GALLINA: return "fitxers/gallines.dat";
-            case POLP: return "fitxers/polps.dat";
-            case PEIX: return "fitxers/peixos.dat";
-            default: return "fitxers/animals.dat";
+            case POLP:    return "fitxers/polps.dat";
+            case PEIX:    return "fitxers/peixos.dat";
+            default:      return "fitxers/animals.dat";
         }
     }
 
-    /**
-     * Guarda un objeto Animal en su archivo correspondiente.
-     * Sigue la lógica de: Leer lista actual -> Añadir nuevo -> Sobrescribir archivo.
-     */
+    // Mètode privat compartit: guarda qualsevol objecte en un fitxer binari
+    // El fan servir tant guardarAnimal com guardarUsuari
+    private static void guardar(Object obj, String ruta) {
+        new Fitxers(ruta).guardarObjecte(obj);
+    }
+
+    // Guarda un animal al fitxer corresponent al seu tipus
     public static void guardarAnimal(Animal a) {
-        // Obtenemos la ruta correcta según el tipo de animal que sea el objeto 'a'
         String ruta = rutaFitxer(a.getTipus());
-
-        // Leemos lo que ya hay en ese archivo para no borrar los animales anteriores
         ArrayList<Animal> llista = llegir(ruta);
-        // Añadimos el nuevo animal a la lista cargada
         llista.add(a);
-
-        // Usamos la clase Fitxers para guardar toda la lista actualizada en el archivo
-        new Fitxers(ruta).guardarObjecte(llista);
+        guardar(llista, ruta);  // usa el mètode compartit
     }
 
-    /**
-     * Elimina un animal buscando por su nombre dentro de un archivo específico.
-     */
+    // Guarda un usuari nou al fitxer d'usuaris
+    public static void guardarUsuari(String user, String pass) {
+        HashMap<String, String> usuaris = llegirUsuaris();
+        usuaris.put(user, pass);
+        guardar(usuaris, RUTA_USUARIS);  // usa el mètode compartit
+    }
+
+    // Elimina un animal pel seu nom dins d'un fitxer
     public static void eliminarAnimal(String nom, String ruta) {
-        // Cargamos la lista completa del archivo
         ArrayList<Animal> llista = llegir(ruta);
-
-        // Usamos un predicado (Lambda) para eliminar todos los animales cuyo nombre
-        // coincida con el que pasamos por parámetro.
         llista.removeIf(a -> a.getNom().equals(nom));
-
-        // Volvemos a guardar la lista (ahora más corta) en el archivo
-        new Fitxers(ruta).guardarObjecte(llista);
+        guardar(llista, ruta);
     }
 
-    /**
-     * Lee un archivo y devuelve una lista de objetos Animal.
-     * @return Una lista con los animales o una lista vacía si el archivo no existe/está vacío.
-     */
+    // Llegeix una llista d'animals d'un fitxer, retorna llista buida si no existeix
     public static ArrayList<Animal> llegir(String ruta) {
-
-        // Intentamos leer el objeto desde el archivo binario
         Object obj = new Fitxers(ruta).llegirObjecte();
-
-        // Control de errores: si no hay nada o el archivo no existe, devolvemos una lista vacía para evitar NullPointerException
         if (obj == null) return new ArrayList<>();
-
-        // Hacemos un casting seguro del objeto genérico a una lista de Animales
         return (ArrayList<Animal>) obj;
+    }
+
+    // Llegeix el mapa d'usuaris del fitxer, retorna mapa buit si no existeix
+    public static HashMap<String, String> llegirUsuaris() {
+        Object obj = new Fitxers(RUTA_USUARIS).llegirObjecte();
+        if (obj == null) return new HashMap<>();
+        return (HashMap<String, String>) obj;
     }
 }

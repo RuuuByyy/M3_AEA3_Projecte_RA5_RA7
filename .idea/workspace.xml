@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="487b56ea-03a0-4336-8db1-764da41a3898" name="Changes" comment="commit ruben">
+    <list default="true" id="487b56ea-03a0-4336-8db1-764da41a3898" name="Changes" comment="commit final ruben">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fitxers/usuaris.dat" beforeDir="false" afterPath="$PROJECT_DIR$/fitxers/usuaris.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/utils/GestioFitxers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/perez/cordero/projecte_ra5_ra7/utils/GestioFitxers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/perez/cordero/projecte_ra5_ra7/fxml/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/perez/cordero/projecte_ra5_ra7/fxml/login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,29 +29,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Projecte_Ra5_Ra7" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Projecte_Ra5_Ra7" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Projecte_Ra5_Ra7" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Projecte_Ra5_Ra7" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -78,29 +56,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.M3_AEA3_Projecte_RA5_RA7 [buildDependents].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Projecte_Ra5_Ra7 [build].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/david/Documents/GitHub/M3_AEA3_Projecte_RA5_RA7&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.M3_AEA3_Projecte_RA5_RA7 [buildDependents].executor": "Run",
+    "Gradle.Projecte_Ra5_Ra7 [build].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Ruben/Desktop/DAM-GS3/M3/UF6/Projecte_Ra5_Ra7",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Gradle.Projecte_Ra5_Ra7 [build]">
+}]]></component>
+  <component name="RunManager" selected="Gradle.Projecte_Ra5_Ra7 [run]">
     <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="perez.cordero.projecte_ra5_ra7.app.MainApp" />
       <module name="Projecte_Ra5_Ra7.main" />
@@ -204,9 +182,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Projecte_Ra5_Ra7 [run]" />
         <item itemvalue="Gradle.Projecte_Ra5_Ra7 [build]" />
         <item itemvalue="Gradle.Projecte_Ra5_Ra7 [clean]" />
-        <item itemvalue="Gradle.Projecte_Ra5_Ra7 [run]" />
         <item itemvalue="Application.MainApp" />
         <item itemvalue="Gradle.M3_AEA3_Projecte_RA5_RA7 [buildDependents]" />
       </list>

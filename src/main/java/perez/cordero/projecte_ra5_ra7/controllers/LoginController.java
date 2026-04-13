@@ -1,81 +1,77 @@
 package perez.cordero.projecte_ra5_ra7.controllers;
 
-// Importaciones de JavaFX para la gestión de escenas, ventanas y componentes
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-// Importación de alertas personalizadas y gestión de ficheros externa
+import perez.cordero.projecte_ra5_ra7.utils.GestioFitxers;
 import vicent.Bellver.MissatgesIAlertes.Alerta;
-import Perez.Cordero.Fitxers;
 
 import java.util.HashMap;
 
-/**
- * Controlador de la pantalla de Login.
- * Gestiona la autenticación de usuarios leyendo de un archivo binario.
- */
+// Controlador del login
+// Valida l'usuari i la contrasenya llegint del fitxer binari usuaris.dat
 public class LoginController {
 
-    // Campo de texto vinculado al FXML donde el usuario escribe su nombre
     @FXML
     private TextField txtUser;
 
-    // Campo de contraseña vinculado al FXML
     @FXML
     private PasswordField txtPassword;
 
-    /**
-     * Método principal de validación de usuario y contraseña.
-     */
+    // S'executa automaticament quan es carrega el login
+    // Si no existeix cap usuari, crea l'usuari per defecte admin/admin
+    @FXML
+    public void initialize() {
+        HashMap<String, String> usuaris = GestioFitxers.llegirUsuaris();
+        if (usuaris.isEmpty()) {
+            GestioFitxers.guardarUsuari("admin", "admin");
+        }
+    }
+
+    // Comprova si l'usuari i la contrasenya son correctes
     public void login() {
-
-        // Instanciamos el manejador de ficheros apuntando al archivo de usuarios
-        Fitxers f = new Fitxers("fitxers/usuaris.dat");
-
-        // Leemos el objeto del archivo y hacemos un casting a HashMap de usuario-contraseña
-        HashMap<String, String> usuaris = (HashMap<String, String>) f.llegirObjecte();
+        HashMap<String, String> usuaris = GestioFitxers.llegirUsuaris();
 
         String user = txtUser.getText();
         String pass = txtPassword.getText();
 
-        // Verificamos si el mapa está vacío, el usuario no existe, o la contraseña no coincide
-        if (usuaris == null || !usuaris.containsKey(user) || !usuaris.get(user).equals(pass)) {
+        if (!usuaris.containsKey(user) || !usuaris.get(user).equals(pass)) {
             new Alerta().alertaError("Error", null, "Usuari o contrasenya incorrecte");
-            return; // Cortamos la ejecución si los datos son erróneos
+            return;
         }
 
-        // Si el usuario existe, mostramos mensaje de éxito
         new Alerta().alertaInformacio("Info", null, "Login correcte");
-
-        // Obtenemos la ventana actual (Stage) a través del componente txtUser y la cerramos
         ((Stage) txtUser.getScene().getWindow()).close();
-
-        // Llamamos al método para cargar la siguiente pantalla
         obrirMenu();
     }
 
-    /**
-     * Método auxiliar para cargar y mostrar la ventana principal del menú.
-     */
-    private void obrirMenu() {
+    // Obre el formulari per registrar un nou usuari
+    public void obrirRegistre() {
         try {
-            // Cargamos el nuevo archivo FXML del menú
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/perez/cordero/projecte_ra5_ra7/fxml/menu.fxml"));
-
-            // Creamos un nuevo escenario (ventana)
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(
+                    "/perez/cordero/projecte_ra5_ra7/fxml/registre.fxml"));
             Stage stage = new Stage();
-
-            // Creamos la escena con el contenido del FXML y la asignamos al escenario
             stage.setScene(new Scene(loader.load()));
-            stage.setTitle("Menu");
-
-            // Mostramos la nueva ventana
+            stage.setTitle("Registre d'usuari");
             stage.show();
         } catch (Exception e) {
-            // Imprimimos el error en consola en caso de que falle la carga del FXML
+            e.printStackTrace();
+        }
+    }
+
+    // Obre la finestra del menu principal
+    private void obrirMenu() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(
+                    "/perez/cordero/projecte_ra5_ra7/fxml/menu.fxml"));
+            Stage stage = new Stage();
+            stage.setScene(new Scene(loader.load()));
+            stage.setTitle("Menu");
+            stage.show();
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

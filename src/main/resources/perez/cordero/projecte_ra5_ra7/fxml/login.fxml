@@ -2,19 +2,21 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.PasswordField?>
+
 <VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
       fx:controller="perez.cordero.projecte_ra5_ra7.controllers.LoginController"
       stylesheets="@../css/style.css"
       prefWidth="500" prefHeight="350">
 
+    <Label text="Usuari inicial: admin / admin"/>
     <TextField fx:id="txtUser" promptText="Usuari"/>
     <PasswordField fx:id="txtPassword" promptText="Contrasenya"/>
     <Button text="Login" onAction="#login"/>
+    <Hyperlink text="Registra't" onAction="#obrirRegistre"/>
 
 </VBox>
